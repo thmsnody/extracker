@@ -1,0 +1,122 @@
+// -------------------- common --------------------
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  padding: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+.container {
+  width: 90%;
+  max-width: 30rem;
+  height: 100vh;
+  min-height: 50rem;
+  margin: 0 auto;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+$bb: rgba(
+  $color: #000000,
+  $alpha: 0.3,
+);
+$green: #2ecc71;
+$red: #c0392b;
+// -------------------- main --------------------
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.sub-title {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+.balance {
+  font-size: 2rem;
+  margin: 0;
+}
+.summary {
+  display: flex;
+  margin: 1.5rem 0 2rem;
+  padding: 0.5rem 0;
+  box-shadow: 0 0 5px 1px $bb;
+  text-align: center;
+  background-color: #fff;
+
+  .devider {
+    border-right: 1px solid $bb;
+  }
+  h3 {
+    padding: 0 2.5rem;
+  }
+  .income-balance {
+    color: $green;
+  }
+  .expense-balance {
+    color: $red;
+  }
+}
+
+.history {
+  margin-bottom: 2rem;
+  h3 {
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px $bb;
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.3rem;
+    padding: 0.4rem 0.6rem;
+    background-color: #fff;
+  }
+  .true {
+    border-right: 3px solid $green;
+  }
+  .false {
+    border-right: 3px solid $red;
+  }
+}
+
+.input-form {
+  h3 {
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px $bb;
+  }
+  label {
+    display: block;
+    margin-bottom: 1rem;
+    input {
+      width: 100%;
+      margin-top: 0.3rem;
+      padding: 0.4rem;
+      font-size: 1rem;
+    }
+  }
+  .btn {
+    width: 100%;
+    padding: 0.5rem;
+
+    font-size: 1rem;
+    color: white;
+    background-color: #9c88ff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
